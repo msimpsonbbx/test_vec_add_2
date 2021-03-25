@@ -3407,7 +3407,7 @@ window.onload = function () { addSorting(); }
 <center><h1>Design Guidance Report</h1></center><center><table class="header" border="0">
 <tr><td><b>Copyright</b></td><td>Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.</td></tr>
 <tr><td><b>Tool Version</b></td><td>xrcserver v.2020.1.1 (lin64) Build 0 </td></tr>
-<tr><td><b>Date</b></td><td>Thu Mar 25 09:41:28 2021</td></tr>
+<tr><td><b>Date</b></td><td>Thu Mar 25 10:35:15 2021</td></tr>
 <tr><td><b>Host</b></td><td>work2-System-Product-Name running 64-bit Ubuntu 18.04.5 LTS</td></tr>
 <tr><td><b>Command</b></td><td>Vitis IDE session Emulation-HW</td></tr>
 </table></center><br>
@@ -3440,7 +3440,62 @@ window.onload = function () { addSorting(); }
 <th align="left" width="380">Resolution</th>
 </tr>
 <tr>
-<td align="left">6</td>
+<td align="left">23</td>
+<td align="left">Interface</td>
+<td align="left">advisory</td>
+<td align="left">Medium</td>
+<td align="left">HLS Interface Related</td>
+<td align="left">Accelerator.krnl_vadd.Interface</td>
+<td align="left">Burst read of variable length and bit width 32 has been inferred on port 'gmem' (<a href="file:///tools/Xilinx/Vitis/2020.1/workspace/test_vec_add/src/krnl_vadd.cpp#line=83">krnl_vadd.cpp</a>)
+</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">24</td>
+<td align="left">Interface</td>
+<td align="left">advisory</td>
+<td align="left">Medium</td>
+<td align="left">HLS Interface Related</td>
+<td align="left">Accelerator.krnl_vadd.Interface</td>
+<td align="left">Burst read of variable length and bit width 32 has been inferred on port 'gmem' (<a href="file:///tools/Xilinx/Vitis/2020.1/workspace/test_vec_add/src/krnl_vadd.cpp#line=90">krnl_vadd.cpp</a>)
+</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">25</td>
+<td align="left">Interface</td>
+<td align="left">advisory</td>
+<td align="left">Medium</td>
+<td align="left">HLS Interface Related</td>
+<td align="left">Accelerator.krnl_vadd.Interface</td>
+<td align="left">Burst write of variable length and bit width 32 has been inferred on port 'gmem' (<a href="file:///tools/Xilinx/Vitis/2020.1/workspace/test_vec_add/src/krnl_vadd.cpp#line=90">krnl_vadd.cpp</a>)
+</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">26</td>
+<td align="left">Latency</td>
+<td align="left">warning</td>
+<td align="left">Medium</td>
+<td align="left">HLS Latency Related</td>
+<td align="left">Accelerator.krnl_vadd.Latency</td>
+<td align="left">Cannot flatten loop 'VITIS_LOOP_76_1' (<a href="file:///tools/Xilinx/Vitis/2020.1/workspace/test_vec_add/src/krnl_vadd.cpp#line=76">krnl_vadd.cpp</a>) in function 'krnl_vadd' more than one sub loop.
+</td>
+<td align="left"><a href="http://www.xilinx.com/html_docs/xilinx2020_1/hls-guidance/200-960.html">See here for more help on vitis_hls 200-960 guidance.</a></td>
+</tr>
+<tr>
+<td align="left">27</td>
+<td align="left">Throughput</td>
+<td align="left">advisory</td>
+<td align="left">Medium</td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.krnl_vadd.Throughput</td>
+<td align="left">Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">28</td>
 <td align="left">Throughput</td>
 <td align="left">advisory</td>
 <td align="left">Medium</td>
@@ -3451,7 +3506,7 @@ window.onload = function () { addSorting(); }
 <td align="left"></td>
 </tr>
 <tr>
-<td align="left">7</td>
+<td align="left">29</td>
 <td align="left">Kernel</td>
 <td align="left">warning</td>
 <td align="left">Medium</td>
@@ -3462,7 +3517,7 @@ window.onload = function () { addSorting(); }
 <td align="left"><a href="http://www.xilinx.com/html_docs/xilinx2020_1/hls-guidance/200-871.html">See here for more help on vitis_hls 200-871 guidance.</a></td>
 </tr>
 <tr>
-<td align="left">8</td>
+<td align="left">30</td>
 <td align="left">Kernel</td>
 <td align="left">warning</td>
 <td align="left">Medium</td>
@@ -3479,7 +3534,7 @@ window.onload = function () { addSorting(); }
 <td align="left"><a href="http://www.xilinx.com/html_docs/xilinx2020_1/hls-guidance/200-1016.html">See here for more help on vitis_hls 200-1016 guidance.</a></td>
 </tr>
 <tr>
-<td align="left">9</td>
+<td align="left">31</td>
 <td align="left">Kernel</td>
 <td align="left">advisory</td>
 <td align="left">Medium</td>
@@ -3490,68 +3545,13 @@ window.onload = function () { addSorting(); }
 <td align="left"></td>
 </tr>
 <tr>
-<td align="left">10</td>
+<td align="left">32</td>
 <td align="left">Kernel</td>
 <td align="left">advisory</td>
 <td align="left">Medium</td>
 <td align="left">HLS Kernel Related</td>
 <td align="left">Accelerator.krnl_vadd.Kernel</td>
 <td align="left">**** Estimated Fmax: 186.76 MHz
-</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">1</td>
-<td align="left">Interface</td>
-<td align="left">advisory</td>
-<td align="left">Medium</td>
-<td align="left">HLS Interface Related</td>
-<td align="left">Accelerator.krnl_vadd.Interface</td>
-<td align="left">Burst read of variable length and bit width 32 has been inferred on port 'gmem' (<a href="file:///tools/Xilinx/Vitis/2020.1/workspace/test_vec_add/src/krnl_vadd.cpp#line=83">krnl_vadd.cpp</a>)
-</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">2</td>
-<td align="left">Interface</td>
-<td align="left">advisory</td>
-<td align="left">Medium</td>
-<td align="left">HLS Interface Related</td>
-<td align="left">Accelerator.krnl_vadd.Interface</td>
-<td align="left">Burst read of variable length and bit width 32 has been inferred on port 'gmem' (<a href="file:///tools/Xilinx/Vitis/2020.1/workspace/test_vec_add/src/krnl_vadd.cpp#line=90">krnl_vadd.cpp</a>)
-</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">3</td>
-<td align="left">Interface</td>
-<td align="left">advisory</td>
-<td align="left">Medium</td>
-<td align="left">HLS Interface Related</td>
-<td align="left">Accelerator.krnl_vadd.Interface</td>
-<td align="left">Burst write of variable length and bit width 32 has been inferred on port 'gmem' (<a href="file:///tools/Xilinx/Vitis/2020.1/workspace/test_vec_add/src/krnl_vadd.cpp#line=90">krnl_vadd.cpp</a>)
-</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">4</td>
-<td align="left">Latency</td>
-<td align="left">warning</td>
-<td align="left">Medium</td>
-<td align="left">HLS Latency Related</td>
-<td align="left">Accelerator.krnl_vadd.Latency</td>
-<td align="left">Cannot flatten loop 'VITIS_LOOP_76_1' (<a href="file:///tools/Xilinx/Vitis/2020.1/workspace/test_vec_add/src/krnl_vadd.cpp#line=76">krnl_vadd.cpp</a>) in function 'krnl_vadd' more than one sub loop.
-</td>
-<td align="left"><a href="http://www.xilinx.com/html_docs/xilinx2020_1/hls-guidance/200-960.html">See here for more help on vitis_hls 200-960 guidance.</a></td>
-</tr>
-<tr>
-<td align="left">5</td>
-<td align="left">Throughput</td>
-<td align="left">advisory</td>
-<td align="left">Medium</td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.krnl_vadd.Throughput</td>
-<td align="left">Pipelining result : Target II = 1, Final II = 1, Depth = 3.
 </td>
 <td align="left"></td>
 </tr>
@@ -3574,7 +3574,7 @@ window.onload = function () { addSorting(); }
 <th align="left" width="320">Rule Description</th>
 </tr>
 <tr>
-<td align="left">11</td>
+<td align="left">33</td>
 <td align="left">SYSLINK-1</td>
 <td align="left">system_link Top Level BD Creation</td>
 <td align="left"></td>
