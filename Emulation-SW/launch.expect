@@ -38,7 +38,7 @@ send "export LD_LIBRARY_PATH=/mnt/sd-mmcblk0p1/:/tmp"
 send "\n"
 
 expect "# "
-send "./hw_tester\n"
+send "./test_vec_add\n"
 
 expect {
 	-re "Failed" {
